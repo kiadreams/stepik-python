@@ -1,0 +1,1 @@
+print(*map(lambda c: 255 - int(c), input().split()))

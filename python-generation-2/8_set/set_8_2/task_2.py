@@ -1,0 +1,11 @@
+n, m, k, x, y, z, t, a = (int(input()) for _ in range(8))
+A = n + m - x - t
+B = m + k - y - t
+C = n + k - z - t
+n_1 = n - C - A - t
+m_1 = m - A - B - t
+k_1 = k - C - B - t
+two_books = A + B + C
+one_book = n_1 + m_1 + k_1
+not_read = a - t - two_books - one_book
+print(one_book, two_books, not_read, sep='\n')
