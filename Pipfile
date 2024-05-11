@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 
 [dev-packages]
+wemake-python-styleguide = "*"
+black = "*"
 
 [requires]
 python_version = "3.12"
