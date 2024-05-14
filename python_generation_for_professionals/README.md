@@ -1,1 +1,1 @@
-# Course - "Python generation - for professionals"
+# Курс "Поколение Python" для профессионалов
