@@ -1,0 +1,30 @@
+2024-05-26 17:34:15.341663: Start work in get_information:
+2024-05-26 17:34:15.341882: Finished work in get_information
+2024-05-26 17:34:15.341970: Start work in delete_files
+2024-05-26 17:34:15.342049: Finished work in delete_files
+2024-05-26 17:34:15.342139: Start work in get_information:
+2024-05-26 17:34:15.343042: Finished work in get_information
+2024-05-26 17:35:06.612929: Start work in <function get_information at 0x7afa51b2a200>:
+2024-05-26 17:35:06.613038: Finished work in get_information
+2024-05-26 17:35:06.613096: Start work in delete_files
+2024-05-26 17:35:06.613187: Finished work in delete_files
+2024-05-26 17:35:06.613244: Start work in <function get_information at 0x7afa51b2a200>:
+2024-05-26 17:35:06.613295: Finished work in get_information
+2024-05-26 17:35:12.877678: Start work in get_information:
+2024-05-26 17:35:12.877794: Finished work in get_information
+2024-05-26 17:35:12.877866: Start work in delete_files
+2024-05-26 17:35:12.877918: Finished work in delete_files
+2024-05-26 17:35:12.877968: Start work in get_information:
+2024-05-26 17:35:12.878017: Finished work in get_information
+2024-05-26 18:16:05.486013: Start work in get_information:
+2024-05-26 18:16:05.486121: Finished work in get_information
+2024-05-26 18:16:05.486197: Start work in delete_files
+2024-05-26 18:16:05.486250: Finished work in delete_files
+2024-05-26 18:16:05.486301: Start work in get_information:
+2024-05-26 18:16:05.486350: Finished work in get_information
+2024-05-26 18:16:34.138669: Start work in get_information:
+2024-05-26 18:16:34.138775: Finished work in get_information
+2024-05-26 18:16:34.138834: Start work in delete_files
+2024-05-26 18:16:34.138888: Finished work in delete_files
+2024-05-26 18:16:34.138940: Start work in get_information:
+2024-05-26 18:16:34.138991: Finished work in get_information
