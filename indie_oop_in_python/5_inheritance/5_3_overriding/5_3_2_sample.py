@@ -33,3 +33,22 @@ class D(U):
 
 
 CURD()
+
+print("\n")
+
+
+class Person:
+
+    def __init__(self, name):
+        self.name = name
+
+    def __str__(self):
+        return f"{self.__class__.__name__} {self.name}"
+
+class Doctor(Person):
+    pass
+
+
+p = Person("Vasia")
+d = Doctor("Petia")
+print(p, d, sep="\n")
