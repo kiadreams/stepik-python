@@ -45,6 +45,7 @@ class Person:
     def __str__(self):
         return f"{self.__class__.__name__} {self.name}"
 
+
 class Doctor(Person):
     pass
 
