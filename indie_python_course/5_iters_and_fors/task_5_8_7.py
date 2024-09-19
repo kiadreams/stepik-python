@@ -1,7 +1,8 @@
 a, b = map(int, input().split())
-
-for i in range(a - 2, -1, -1):
-    for j in range(b - 2, -1, -1):
-        m[i][j] = m[i + 1][j] + m[i][j + 1]
+m = [[0] * b for _ in range(a)]
+k = iter(range(a * b))
+for i in range(a):
+    for j in (range(b - 1, -1, -1) if i % 2 else range(b)):
+        m[i][j] = next(k)
 for el in m:
     print(*el)
