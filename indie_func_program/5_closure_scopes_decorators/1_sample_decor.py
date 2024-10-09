@@ -9,5 +9,4 @@ def my_decor(f):
 def some_func():
     print("s")
 
-
 print(some_func())
