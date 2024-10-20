@@ -1,3 +1,4 @@
+from audioop import reverse
 from functools import wraps
 
 
@@ -17,3 +18,8 @@ def limit_query(n):
         return inner
 
     return decorator
+
+sum()
+sorted()
+max()
+min()
