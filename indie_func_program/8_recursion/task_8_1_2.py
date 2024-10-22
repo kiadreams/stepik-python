@@ -4,4 +4,4 @@ def print_from(n):
         print_from(n - 1)
 
 
-print_from(4)
+print_from(5)
