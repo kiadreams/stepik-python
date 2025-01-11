@@ -3,7 +3,7 @@ import asyncio
 
 async def compute_square(x: int) -> int:
     print(f"Вычисляем квадрат числа: {x}")
-    await asyncio.sleep(1)  # Имитация длительной операции
+    await asyncio.sleep(3)  # Имитация длительной операции
     return x * x
 
 
