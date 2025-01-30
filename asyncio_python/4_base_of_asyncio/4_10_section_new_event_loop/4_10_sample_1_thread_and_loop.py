@@ -53,3 +53,6 @@ async def main():
 
 asyncio.run(main())
 # main()
+
+loop_2 = asyncio.new_event_loop()
+loop_2.cl
