@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "detailed": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    }
+  },
+  "filters": {
+    "level_filter": {
+      "()": "9_2_sample_1_DICT_CONFIG.LevelFilter",
+      "min_level": 30
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "detailed",
+      "filters": ["level_filter"]
+    }
+  },
+  "loggers": {
+    "": {
+      "handlers": ["console"],
+      "level": "DEBUG"
+    }
+  }
+}
