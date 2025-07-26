@@ -10,7 +10,6 @@ class Point:
 
 point1 = Point(5, 7)
 point2 = Point(-10, 12)
-я
 
 # Ниже располагается код для проверки
 
