@@ -5,3 +5,4 @@ menu = {'Главная': 'home', 'Архив': 'archive', 'Новости': 'ne
 
 menu = {**menu, **dict([i.split('=') for i in lst_in])}
 print(menu)
+print(23)
