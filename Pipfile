@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 django = "*"
 pyyaml = "*"
+pytz = "*"
+yarl = "*"
 
 [dev-packages]
 wemake-python-styleguide = "*"
