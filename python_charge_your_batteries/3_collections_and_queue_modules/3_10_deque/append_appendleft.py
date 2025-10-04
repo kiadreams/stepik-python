@@ -1,0 +1,20 @@
+from collections import deque
+
+my_deck = deque('cat')
+print(my_deck)  # deque(['c', 'a', 't'])
+my_deck.append('t')
+my_deck.append('y')
+print(my_deck)  # deque(['c', 'a', 't', 't', 'y'])
+my_deck.appendleft('s')
+print(my_deck)  # deque(['s', 'c', 'a', 't', 't', 'y'])
+my_deck.appendleft('i')
+print(my_deck)  # deque(['i', 's', 'c', 'a', 't', 't', 'y'])
+print()
+
+my_deck1 = deque('ca', maxlen=3)
+my_deck1.append('t')
+print(my_deck1)  # deque(['c', 'a', 't'], maxlen=3)
+my_deck1.append('w')
+print(my_deck1)  # deque(['a', 't', 'w'], maxlen=3)
+my_deck1.appendleft('r')
+print(my_deck1)  # deque(['r', 'a', 't'], maxlen=3)
