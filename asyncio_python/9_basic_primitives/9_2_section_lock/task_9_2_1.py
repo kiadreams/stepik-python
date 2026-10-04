@@ -18,11 +18,11 @@ async def move(robot):
         print(f"Робот {robot} передвигается к месту A")
         count += 1
         await asyncio.sleep(1)
-        print(f'Робот {robot} достиг места A. Место A посещено {count} раз')
+        print(f"Робот {robot} достиг места A. Место A посещено {count} раз")
 
 
 async def main():
-    tasks = [move(f'{name}({i})') for i, name in enumerate(robot_names)]
+    tasks = [move(f"{name}({i})") for i, name in enumerate(robot_names)]
     await asyncio.gather(*tasks)
 
 

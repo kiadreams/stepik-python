@@ -5,8 +5,21 @@ import random
 
 turtle.Screen().setup(1920, 1080)
 turtle.colormode(255)
-colors = 'red', 'orange', 'yellow', 'LimeGreen', 'LawnGreen', 'lightgreen', \
-        'cyan', 'PowderBlue', 'blue', 'orchid', 'magenta', 'green', 'purple'
+colors = (
+    "red",
+    "orange",
+    "yellow",
+    "LimeGreen",
+    "LawnGreen",
+    "lightgreen",
+    "cyan",
+    "PowderBlue",
+    "blue",
+    "orchid",
+    "magenta",
+    "green",
+    "purple",
+)
 turtle.speed(0)
 turtle.hideturtle()
 for i in range(100):

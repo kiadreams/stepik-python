@@ -3,7 +3,7 @@ from functools import reduce
 
 
 # Вариант 1
-def product_of_odds_1(data):   # data - список целых чисел
+def product_of_odds_1(data):  # data - список целых чисел
     result = 1
     for i in data:
         if i % 2 == 1:
@@ -24,7 +24,6 @@ def product_of_odds_3(data):
 # Вариант 4
 def product_of_odds_4(data):
     return reduce(mul, filter(lambda x: x % 2 == 1, data), 1)
-
 
 
 print(product_of_odds_1([1, 2, 4, 5, 6, 7]))

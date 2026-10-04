@@ -336,7 +336,7 @@ async def call_company(company: dict):
     except asyncio.CancelledError:
         pass
     else:
-        print(f'Company {company["Name"]}: {company["Phone"]} дозвон успешен')
+        print(f"Company {company['Name']}: {company['Phone']} дозвон успешен")
 
 
 async def main():

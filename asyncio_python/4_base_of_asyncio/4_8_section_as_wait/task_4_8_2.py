@@ -31,8 +31,7 @@ async def main():
         )
         task.cancel()
     print(
-        f"\nПриготовлено блюд: {len(done)}. "
-        f"Не успели приготовиться: {len(pending)}.",
+        f"\nПриготовлено блюд: {len(done)}. Не успели приготовиться: {len(pending)}.",
     )
 
 

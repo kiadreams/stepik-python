@@ -23,9 +23,7 @@ async def get_fact_from_db(lock, number):
 
 async def main():
     lock = asyncio.Lock()
-    tasks = [
-        asyncio.create_task(get_fact_from_db(lock, i)) for i in range(1, 11)
-    ]
+    tasks = [asyncio.create_task(get_fact_from_db(lock, i)) for i in range(1, 11)]
     await asyncio.gather(*tasks)
 
 

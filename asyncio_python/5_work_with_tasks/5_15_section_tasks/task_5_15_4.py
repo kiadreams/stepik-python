@@ -17,9 +17,9 @@ async def publish_post(text: str) -> str:
 async def notify_subscribers(subscribers: list[str]) -> None:
     async def notify_subscriber(subscriber):
         print(await asyncio.sleep(1, f"Уведомление отправлено {subscriber}"))
+
     coroutines = [notify_subscriber(subscriber) for subscriber in subscribers]
     await asyncio.gather(*coroutines)
-
 
 
 async def main():

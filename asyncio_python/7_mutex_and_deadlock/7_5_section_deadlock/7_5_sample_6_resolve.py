@@ -6,9 +6,7 @@ async def task(number, locks):
     sorted_locks = sorted(locks, key=id)
     # sorted_locks = [*locks]
 
-    print(
-        f"Задача {number}: пытается захватить блокировки в порядке {sorted_locks}"
-    )
+    print(f"Задача {number}: пытается захватить блокировки в порядке {sorted_locks}")
     async with sorted_locks[0]:
         await asyncio.sleep(1)  # Имитация работы в критическом участке
         async with sorted_locks[1]:

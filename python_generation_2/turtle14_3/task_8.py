@@ -4,6 +4,7 @@ from math import sin, pi
 
 t.Screen().setup(600, 600)
 
+
 def polygon(length, num, color2):
     size = sin(pi / num) * (length / pi)
     t.fillcolor(color2)
@@ -16,9 +17,11 @@ def polygon(length, num, color2):
         t.right(360 / num)
     t.end_fill()
 
+
 def colors():
     shape_color = (r(256), r(256), r(256))
     return shape_color
+
 
 def move(x1, y1):
     t.penup()
@@ -27,6 +30,7 @@ def move(x1, y1):
     else:
         t.goto(x1, y1)
     t.pendown()
+
 
 t.hideturtle()
 t.colormode(255)

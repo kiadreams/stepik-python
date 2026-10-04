@@ -23,8 +23,8 @@ async def check_book(book):
     await asyncio.sleep(0.1)
     if not book["Наличие на полке"]:
         return (
-            f"{book["Порядковый номер"]}: "
-            f"{book["Автор"]}: {book["Название"]} ({book["Год издания"]})"
+            f"{book['Порядковый номер']}: "
+            f"{book['Автор']}: {book['Название']} ({book['Год издания']})"
         )
     return None
 

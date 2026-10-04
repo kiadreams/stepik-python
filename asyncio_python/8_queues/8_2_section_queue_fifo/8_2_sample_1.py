@@ -90,4 +90,5 @@ async def main():
     # запустить производителя и потребителя
     await asyncio.gather(producer(queue), consumer(queue))
 
+
 asyncio.run(main())

@@ -1,4 +1,3 @@
-
 # Первый мой вариант...
 # def get_biggest(numbers: list) -> int:
 #     if not numbers:
@@ -15,14 +14,14 @@
 #     return int(''.join(result))
 
 
-
 # Второй мой вариант
 def get_biggest(numbers: list) -> int:
     if numbers:
         m_len = len(str(max(numbers)))
         numbers = list(map(str, sorted(numbers, key=lambda x: str(x) * m_len)))
-        return int(''.join(numbers[::-1]))
+        return int("".join(numbers[::-1]))
     return -1
+
 
 # Чужой вариант
 # def get_biggest(numbers: list):
@@ -34,11 +33,13 @@ def get_biggest(numbers: list) -> int:
 #     return -1
 
 # Проверка тустов
-my_path = '2_1_repetition/tests_2310080/'
+my_path = "2_1_repetition/tests_2310080/"
 for i in range(1, 16):
-    with (open(f'{my_path}{i}', encoding='utf-8') as f_1,
-          open(f'{my_path}{i}.clue', encoding='utf-8') as f_2):
-        data_1 = [int(s) for s in f_1.read()[19:-3].split(',') if s]
+    with (
+        open(f"{my_path}{i}", encoding="utf-8") as f_1,
+        open(f"{my_path}{i}.clue", encoding="utf-8") as f_2,
+    ):
+        data_1 = [int(s) for s in f_1.read()[19:-3].split(",") if s]
         b = f_2.read()
         a = str(get_biggest(data_1))
         for j in range(len(a)):
@@ -48,7 +49,6 @@ for i in range(1, 16):
         # print(b)
         # print(data_1)
         # print(a, b)
- 
-        result = (a if data_1 else '-1') == b
-        print(f'Test_{i}: {result}')
-    
+
+        result = (a if data_1 else "-1") == b
+        print(f"Test_{i}: {result}")

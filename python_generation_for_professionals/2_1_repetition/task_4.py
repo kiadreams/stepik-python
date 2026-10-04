@@ -5,5 +5,5 @@ def print_given(*args, **kargs):
         print(key, value, type(value))
 
 
-print_given(1, [1, 2, 3], 'three', two=2)
+print_given(1, [1, 2, 3], "three", two=2)
 # print_given('apple', 'cherry', 'watermelon')

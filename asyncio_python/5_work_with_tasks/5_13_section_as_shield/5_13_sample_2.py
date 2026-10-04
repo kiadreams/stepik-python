@@ -29,17 +29,13 @@ async def main():
         shielded_and_usual_tasks.append(task)
 
     # Получаем список всех задач в цикле событий кроме задачи, созданной из main()
-    tasks = [
-        task for task in asyncio.all_tasks() if task.get_name() != "Task-1"
-    ]
+    tasks = [task for task in asyncio.all_tasks() if task.get_name() != "Task-1"]
 
     # Получаем результат первого ответа, остальные попытаемся отменить
     done, pending = await asyncio.wait(
         shielded_and_usual_tasks, return_when=asyncio.FIRST_COMPLETED
     )
-    print(
-        *[f"Первая выполненная задача: {future.result()}" for future in done]
-    )
+    print(*[f"Первая выполненная задача: {future.result()}" for future in done])
     [future.cancel() for future in pending]
     print(f"\nОтменяем: {len(pending)} задач")
 
@@ -49,9 +45,7 @@ async def main():
             result = await task
             print(f"Результат выполнения задачи {task.get_name()}: {result}")
         except asyncio.CancelledError as ex:
-            print(
-                f"Ошибка в задаче - задача {task.get_name()} отменена: {type(ex)}"
-            )
+            print(f"Ошибка в задаче - задача {task.get_name()} отменена: {type(ex)}")
 
 
 asyncio.run(main())

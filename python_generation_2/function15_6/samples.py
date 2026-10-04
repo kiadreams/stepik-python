@@ -1,8 +1,18 @@
 from functools import reduce
 import operator
 
-words = ['Testing ', 'shows ', 'the ', 'presence',
-         ', ', 'not ', 'the ', 'absence ', 'of ', 'bugs']
+words = [
+    "Testing ",
+    "shows ",
+    "the ",
+    "presence",
+    ", ",
+    "not ",
+    "the ",
+    "absence ",
+    "of ",
+    "bugs",
+]
 numbers = [1, 2, -6, -4, 3, 9, 0, -6, -1]
 
 # смена знаков элементов списка
@@ -14,8 +24,8 @@ print(concat_words)
 
 print()
 
-pets = ['alfred', 'tabitha', 'william', 'arla']
-chars = ['x', 'y', '2', '3', 'a']
+pets = ["alfred", "tabitha", "william", "arla"]
+chars = ["x", "y", "2", "3", "a"]
 
 uppered_pets = list(map(str.upper, pets))
 capitalized_pets = list(map(str.capitalize, pets))
@@ -27,13 +37,13 @@ print(only_letters)
 
 print()
 
-my_list = list('asdfgh')
+my_list = list("asdfgh")
 print(my_list)
-result = map(str.upper, my_list) # map возвращает итератор
-print(result)               # Выводит объект итератора
-print(list(result)) # !!!Преобразует итератор в список, ОПУСТОШАЯ ЕГО!!!
-print(*result)      # Итератор пуст, поэтому ничего не распокуется!!!
-print(list(result)) # В список ничего не преобразуется - ИТЕРАТОР ПУСТ!!!
+result = map(str.upper, my_list)  # map возвращает итератор
+print(result)  # Выводит объект итератора
+print(list(result))  # !!!Преобразует итератор в список, ОПУСТОШАЯ ЕГО!!!
+print(*result)  # Итератор пуст, поэтому ничего не распокуется!!!
+print(list(result))  # В список ничего не преобразуется - ИТЕРАТОР ПУСТ!!!
 
 # Итераторы — это такие штуки, которые, очевидно, можно итерировать :)
 # Получить итератор мы можем из любого итерируемого объекта.
@@ -49,6 +59,6 @@ print(list(my_iter))
 print()
 
 # !!!БОМБА!!! Объединение элементов списка в список со всеми элементами!!!
-result_5 = sum([['a', 'b'], ['x', 'c'], ['f', 'd']], [])
+result_5 = sum([["a", "b"], ["x", "c"], ["f", "d"]], [])
 print(result_5)
 # print(sum(['a', 'd'], start='b')) # Объединение строк не работает!!!

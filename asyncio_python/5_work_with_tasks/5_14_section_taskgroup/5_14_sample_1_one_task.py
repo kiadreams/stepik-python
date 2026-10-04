@@ -11,6 +11,7 @@ TaskGroup призван объединить функциональность a
 через выражение async with .
     async with asyncio.TaskGroup() as tg:
 """
+
 import asyncio
 
 
@@ -25,5 +26,6 @@ async def main():
         # Создаем в группе задачу.
         task = tg.create_task(some_coro(2))
     print(f"Задача выполнена с результатом: {task.result()}.")
+
 
 asyncio.run(main())

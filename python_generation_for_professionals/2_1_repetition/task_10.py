@@ -4,9 +4,9 @@ def choose_plural(amount: int, declensions: tuple) -> str:
         result = 2
     elif div_10 in [2, 3, 4]:
         result = 1
-    return f'{amount} {declensions[result]}'
+    return f"{amount} {declensions[result]}"
 
 
-print(choose_plural(21, ('пример', 'примера', 'примеров')))
-print(choose_plural(92, ('гвоздь', 'гвоздя', 'гвоздей')))
-print(choose_plural(8, ('яблоко', 'яблока', 'яблок')))
+print(choose_plural(21, ("пример", "примера", "примеров")))
+print(choose_plural(92, ("гвоздь", "гвоздя", "гвоздей")))
+print(choose_plural(8, ("яблоко", "яблока", "яблок")))

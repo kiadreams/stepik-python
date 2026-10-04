@@ -3,7 +3,7 @@ from random import randrange, randint
 
 
 turtle.Screen().setup(600, 600)
-turtle.Screen().bgcolor('#ddf5f7')
+turtle.Screen().bgcolor("#ddf5f7")
 turtle.Screen().colormode(255)
 
 
@@ -18,7 +18,7 @@ def star(size):
 
 def light(size):
     turtle.speed(0)
-    turtle.forward(size*2)
+    turtle.forward(size * 2)
     for _ in range(2):
         for _ in range(2):
             turtle.speed(0)
@@ -49,9 +49,9 @@ def snow_pos(pos_x, pos_y):
     turtle.pendown()
 
 
-n = input('Введите количество снега (целое число): ')
+n = input("Введите количество снега (целое число): ")
 while not n.isdigit():
-    n = input('Пожалуйста, ведите число: ')
+    n = input("Пожалуйста, ведите число: ")
 total_snow = int(n)
 
 while total_snow:

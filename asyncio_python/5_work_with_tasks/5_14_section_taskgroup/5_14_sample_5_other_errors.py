@@ -16,11 +16,10 @@ async def ex_coro():
     # print("ex_coro поднимает исключение KeyboardInterrupt")
     # raise KeyboardInterrupt
 
-
-# 2) Поведение характерное для обработки других исключений (кроме asyncio.CancelledError)
-# Исключения группируются в ExceptionGroup
-    print('ex_coro поднимает исключение Exсeption')
-    raise Exception('Что-то пошло не так!(((')
+    # 2) Поведение характерное для обработки других исключений (кроме asyncio.CancelledError)
+    # Исключения группируются в ExceptionGroup
+    print("ex_coro поднимает исключение Exсeption")
+    raise Exception("Что-то пошло не так!(((")
 
 
 async def main():

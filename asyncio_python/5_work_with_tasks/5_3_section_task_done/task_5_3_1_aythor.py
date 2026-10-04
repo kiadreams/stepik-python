@@ -46,8 +46,8 @@ async def monitor_tasks(tasks):
         # Итерируюсь по копии списка
         for task in tasks[:]:
             res = (
-                f'Задача {task.get_name()}: '
-                f'{["в процессе", "завершена"][status := task.done()]}, '
+                f"Задача {task.get_name()}: "
+                f"{['в процессе', 'завершена'][status := task.done()]}, "
                 f"Статус задачи {status}"
             )
             # Если задача готова - убираю ее из списка задач и помещаю

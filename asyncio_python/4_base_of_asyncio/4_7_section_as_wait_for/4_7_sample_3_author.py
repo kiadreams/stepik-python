@@ -10,9 +10,7 @@ async def coro(delay):
 
 async def coro_a(delay):
     await asyncio.sleep(delay)
-    print(
-        f"{delay=} Другая задача выполнена за {time.perf_counter() - start:.3f}"
-    )
+    print(f"{delay=} Другая задача выполнена за {time.perf_counter() - start:.3f}")
     return delay
 
 
@@ -20,9 +18,7 @@ async def main(max_time=5):
     delays = [2, 3, 4, 5, 6, 7, 1, 8, 9]
     try:
         tasks = [
-            asyncio.wait_for(
-                asyncio.create_task(coro(value)), timeout=max_time
-            )
+            asyncio.wait_for(asyncio.create_task(coro(value)), timeout=max_time)
             for value in delays
         ]
         # Доп задача, которую отправим в тот же gather()

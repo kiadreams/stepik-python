@@ -10,13 +10,11 @@ class Pizzeria:
         # случайное время готовки пиццы от 2 до 5 секунд
         cook_time = random.randint(2, 5)
         print(
-            f"Пиццерия {self.name}"
-            f" начала готовить пиццу для заказа {order_id}.",
+            f"Пиццерия {self.name} начала готовить пиццу для заказа {order_id}.",
         )
         await asyncio.sleep(cook_time)  # ожидание пока пицца готовится
         print(
-            f"Пиццерия {self.name}"
-            f" закончила готовить пиццу для заказа {order_id}.",
+            f"Пиццерия {self.name} закончила готовить пиццу для заказа {order_id}.",
         )
 
 

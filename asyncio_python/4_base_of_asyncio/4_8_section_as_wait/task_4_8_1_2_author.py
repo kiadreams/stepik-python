@@ -32,7 +32,8 @@ async def main():
         for name, delay in processors_delays.items()
     ]
     done, pending = await asyncio.wait(
-        tasks, return_when=asyncio.FIRST_COMPLETED,
+        tasks,
+        return_when=asyncio.FIRST_COMPLETED,
     )
     [task.cancel() for task in pending]
     print(pending)

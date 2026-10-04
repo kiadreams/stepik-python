@@ -26,11 +26,10 @@
 all_email = {input() for _ in range(int(input()))}
 for _ in range(int(input())):
     name = input()
-    email = f'{name}@beegeek.bzz'
+    email = f"{name}@beegeek.bzz"
     count = 1
     while email in all_email:
-        email = name.rstrip('1234567890') + f'{count}@beegeek.bzz'
+        email = name.rstrip("1234567890") + f"{count}@beegeek.bzz"
         count += 1
     all_email.add(email)
     print(email)
-        

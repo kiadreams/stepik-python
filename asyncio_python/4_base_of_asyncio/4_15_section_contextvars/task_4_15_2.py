@@ -31,8 +31,7 @@ async def test_user_actions(language_code):
 
 async def main():
     tasks = (
-        asyncio.create_task(test_user_actions(code))
-        for code in ("en", "ru", "es")
+        asyncio.create_task(test_user_actions(code)) for code in ("en", "ru", "es")
     )
     await asyncio.gather(*tasks)
 

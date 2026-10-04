@@ -22,7 +22,7 @@ async def main():
     tasks = [asyncio.create_task(download_file(file)) for file in files]
     await asyncio.gather(*tasks, return_exceptions=True)
     exceptions = [task.exception() for task in tasks if task.exception()]
-    print(*exceptions, sep='\n')
+    print(*exceptions, sep="\n")
 
 
 asyncio.run(main())

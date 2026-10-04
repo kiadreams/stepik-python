@@ -3,7 +3,7 @@ import asyncio
 
 async def print_with_delay(num: int):
     await asyncio.sleep(1)
-    print(f'Coroutine {num} is done')
+    print(f"Coroutine {num} is done")
 
 
 async def main():

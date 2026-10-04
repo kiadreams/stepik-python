@@ -4,4 +4,4 @@ for _ in range(int(input())):
         result.update(input() for _ in range(int(input())))
     else:
         result.intersection_update(input() for _ in range(int(input())))
-print(*sorted(result), sep='\n')
+print(*sorted(result), sep="\n")

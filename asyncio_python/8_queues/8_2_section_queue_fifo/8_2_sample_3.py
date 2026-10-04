@@ -4,9 +4,9 @@ import asyncio
 # объявление асинхронной функции producer, принимающей аргумент queue
 async def producer(n, queue, prod_range):
     for i in range(*prod_range):
-        item = f'Элемент {i}'  # создание строки с элементом и его номером
+        item = f"Элемент {i}"  # создание строки с элементом и его номером
         await queue.put(item)  # добавление элемента в очередь
-        print(f'producer {n} добавил в очередь элемент: {item}')
+        print(f"producer {n} добавил в очередь элемент: {item}")
         # переключение контекста, позволяющее работать задачам асинхронно
         await asyncio.sleep(0)
 
@@ -17,7 +17,7 @@ async def consumer(queue):
         item = await queue.get()  # получение элемента из очереди
         if item is None:  # если элемент равен None - выход из цикла
             break
-        print(f'consumer получил из очереди элемент: {item}')
+        print(f"consumer получил из очереди элемент: {item}")
         # переключение контекста, позволяющее работать задачам асинхронно
         await asyncio.sleep(0)
 

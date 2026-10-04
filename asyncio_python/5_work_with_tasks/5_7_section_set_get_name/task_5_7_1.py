@@ -43,11 +43,11 @@ order = {"Диван": 5, "Обеденный_стол": 3, "Табуретка"
 async def check_store(item, quantity):
     nums_of_products = warehouse_store.get(item, 0)
     if nums_of_products >= quantity:
-        asyncio.current_task().set_name(f'В наличии: {item}')
+        asyncio.current_task().set_name(f"В наличии: {item}")
     elif nums_of_products:
-        asyncio.current_task().set_name(f'Частично в наличии: {item}')
+        asyncio.current_task().set_name(f"Частично в наличии: {item}")
     else:
-        asyncio.current_task().set_name(f'Отсутствует: {item}')
+        asyncio.current_task().set_name(f"Отсутствует: {item}")
 
 
 async def main():
@@ -56,8 +56,7 @@ async def main():
         for item, quantity in order.items()
     ]
     await asyncio.gather(*tasks)
-    print(*sorted([task.get_name() for task in tasks]), sep='\n')
-
+    print(*sorted([task.get_name() for task in tasks]), sep="\n")
 
 
 asyncio.run(main())

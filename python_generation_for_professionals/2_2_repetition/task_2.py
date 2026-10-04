@@ -9,8 +9,8 @@
 #     print('mix')
 
 # Мой вариант №2
-answer = ('ru', 'mix', 'mix', 'en')
-english_letters = 'AaBCcEeHKMOoPpTXxy'
+answer = ("ru", "mix", "mix", "en")
+english_letters = "AaBCcEeHKMOoPpTXxy"
 result = sum([input() in english_letters for _ in range(3)])
 print(answer[result])
 

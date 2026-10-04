@@ -13,4 +13,3 @@ turtle.forward(length)
 for _ in range(26):
     length -= 5
     zigzag(length)
-

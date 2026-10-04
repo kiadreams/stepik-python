@@ -1,11 +1,13 @@
 import asyncio
 
+
 async def long_running_task(delay):
     # Эмуляция долгой задачи
     if delay == 4:
-        raise ValueError('ожидание равно 4 секунды')
+        raise ValueError("ожидание равно 4 секунды")
     await asyncio.sleep(delay)
     return "Задача завершена"
+
 
 async def main():
     # Создаем задачу
@@ -17,7 +19,7 @@ async def main():
         print("Задача 1 не была завершена в установленное время")
     # Ожидаем завершения корутины за 5 секунд
     result = await asyncio.wait_for(long_running_task(3), 5)
-    print(f'Задача 2: {result}')
+    print(f"Задача 2: {result}")
     # Пуск несколько задач с asyncio.wait_for и с защитой от исключений
     result2 = await asyncio.gather(
         asyncio.wait_for(long_running_task(2), 5),

@@ -46,7 +46,7 @@ async def main():
     task = asyncio.create_task(coro())
     await asyncio.sleep(0.1)
     try:
-        task.cancel('Отмена задачи')
+        task.cancel("Отмена задачи")
         await asyncio.sleep(0.1)
         print(task.cancelled(), task.done())
         # print(task.exception())

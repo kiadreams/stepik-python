@@ -11,7 +11,6 @@ def convert(string: str) -> str:
     return string.upper() if counter > 0 else string.lower()
 
 
-
-print(convert('BEEgeek'))
-print(convert('pyTHON'))
-print(convert('pi31415!'))
+print(convert("BEEgeek"))
+print(convert("pyTHON"))
+print(convert("pi31415!"))

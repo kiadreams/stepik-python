@@ -16,10 +16,10 @@ def draw_ray(some_len):
 
 lenght = 100
 
-turtle.shape('turtle')
+turtle.shape("turtle")
 turtle.pensize(3)
 turtle.stamp()
-turtle.Screen().bgcolor('cyan')
+turtle.Screen().bgcolor("cyan")
 for _ in range(10):
     draw_ray(lenght)
     turtle.left(36)

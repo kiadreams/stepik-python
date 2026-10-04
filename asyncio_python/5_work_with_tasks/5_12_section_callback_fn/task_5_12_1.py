@@ -39,11 +39,11 @@ messages = [
 
 
 def print_code(task):
-    print(f'Код: {codes[task.result()]}')
+    print(f"Код: {codes[task.result()]}")
 
 
 async def show_callback(index_code):
-    print(f'Сообщение: {messages[index_code]}')
+    print(f"Сообщение: {messages[index_code]}")
     return index_code
 
 

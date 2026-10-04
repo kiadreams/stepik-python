@@ -47,12 +47,12 @@ async def portal_operator():
     ]
     res_tasks = await asyncio.gather(*other_tasks)
     close_task = await close_portal(7)
-    print(f'Результат активации портала: {activate_task} единиц энергии')
-    print(f'Результат телепортации: {res_tasks[0]} единиц времени')
-    print(f'Результат подзарядки портала: {res_tasks[1]} единиц энергии')
-    print(f'Результат проверки стабильности: {res_tasks[2]} единиц времени')
-    print(f'Результат восстановления портала: {res_tasks[3]} единиц энергии')
-    print(f'Результат закрытия портала: {close_task} единиц времени')
+    print(f"Результат активации портала: {activate_task} единиц энергии")
+    print(f"Результат телепортации: {res_tasks[0]} единиц времени")
+    print(f"Результат подзарядки портала: {res_tasks[1]} единиц энергии")
+    print(f"Результат проверки стабильности: {res_tasks[2]} единиц времени")
+    print(f"Результат восстановления портала: {res_tasks[3]} единиц энергии")
+    print(f"Результат закрытия портала: {close_task} единиц времени")
 
 
 asyncio.run(portal_operator())

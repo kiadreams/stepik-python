@@ -15,7 +15,7 @@ verses = [
 
 
 async def blacks(i, verse):
-    print(f"{i}{verse}" if i - 1 in (0, 7) else f"{i}{verse}{i-1}")
+    print(f"{i}{verse}" if i - 1 in (0, 7) else f"{i}{verse}{i - 1}")
     await asyncio.sleep(1)
 
 

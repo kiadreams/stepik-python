@@ -8,14 +8,16 @@ import random
 # Важно помнить, что время выполнения задач не влияет на порядок вывода
 # результатов
 
+
 async def my_coroutine(name):
     delay = random.random()
     await asyncio.sleep(delay)
     return f"Корутина {name}: {round(delay, 2)}"
 
+
 async def main():
     results = await asyncio.gather(*[my_coroutine(i) for i in range(1, 6)])
     print(results)
 
-asyncio.run(main())
 
+asyncio.run(main())

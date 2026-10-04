@@ -11,9 +11,9 @@ server_names = {
 
 
 async def load_data(server):
-    print(f'Загрузка данных с сервера {server} началась')
+    print(f"Загрузка данных с сервера {server} началась")
     await asyncio.sleep(random.randint(0, 5))
-    print(f'Загрузка данных с сервера {server} завершена')
+    print(f"Загрузка данных с сервера {server} завершена")
 
 
 async def main():

@@ -3,10 +3,11 @@ import turtle
 
 
 def draw_ray(lennth):
-    turtle.shape('triangle')
+    turtle.shape("triangle")
     turtle.forward(lenght)
     turtle.stamp()
     turtle.backward(lenght)
+
 
 n, lenght = int(input()), 150
 
@@ -18,4 +19,3 @@ for _ in range(n):
 
 
 sleep(3)
-

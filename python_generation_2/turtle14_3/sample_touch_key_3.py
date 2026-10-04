@@ -1,8 +1,10 @@
 import turtle
 from random import randrange
 
+
 def random_color():
-  return randrange(256), randrange(256), randrange(256) 
+    return randrange(256), randrange(256), randrange(256)
+
 
 def draw_circle(x, y, r):
     turtle.penup()
@@ -15,6 +17,7 @@ def draw_circle(x, y, r):
     turtle.circle(r)
     turtle.end_fill()
     turtle.speed(0)
+
 
 def left_mouse_click(x, y):
     draw_circle(x, y, 10)

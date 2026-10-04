@@ -2,7 +2,7 @@ import time
 
 
 second = time.time()
-print(f'Количество {second = }')
+print(f"Количество {second = }")
 local_time = time.ctime(second)
 print()
 print(local_time)

@@ -15,9 +15,7 @@ async def main():
         await lifo_queue.put(i)  # Заполняем очередь заданиями
 
     # Создаем несколько задач-рабочих
-    workers = [
-        asyncio.create_task(worker(f"{i}", lifo_queue)) for i in range(3)
-    ]
+    workers = [asyncio.create_task(worker(f"{i}", lifo_queue)) for i in range(3)]
     await lifo_queue.join()  # Ждем, пока все задания не будут выполнены
     for w in workers:  # Останавливаем задачи-рабочие
         w.cancel()

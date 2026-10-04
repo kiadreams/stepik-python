@@ -8,6 +8,7 @@ import asyncio
 цикла событий.
 """
 
+
 async def my_task():
     current_task = asyncio.current_task()
     print(f"Текущий объект задачи: {current_task}")

@@ -9,7 +9,6 @@ def is_correct_json(string: str) -> bool:
         return False
 
 
-s ='number = 17'
+s = "number = 17"
 
 print(is_correct_json(s))
-

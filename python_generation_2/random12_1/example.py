@@ -18,4 +18,3 @@ for _ in range(3):
 print()
 for _ in range(3):
     print(random.randint(1, 100))
-

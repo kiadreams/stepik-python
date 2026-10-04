@@ -1,7 +1,18 @@
 import time
 import turtle
 
-color_lst = ('#D70F0F', '#EB9A2F', '#F5EB49', '#AFF554', '#57ED53', '#5EF4E6', '#2499F4', '#563EE3', '#D324F4', '#F4243E')
+color_lst = (
+    "#D70F0F",
+    "#EB9A2F",
+    "#F5EB49",
+    "#AFF554",
+    "#57ED53",
+    "#5EF4E6",
+    "#2499F4",
+    "#563EE3",
+    "#D324F4",
+    "#F4243E",
+)
 
 rad = 150
 turtle.penup()

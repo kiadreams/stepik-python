@@ -14,11 +14,11 @@ flights = [
     ("Frontier Airlines F91514", 3.0),
     ("Hawaiian Airlines HA22", 2.4),
     ("Allegiant Air G4159", 1.1),
-    ("Air Canada AC758", 2.9), # 2.9
+    ("Air Canada AC758", 2.9),  # 2.9
     ("Lufthansa LH447", 3.3),
     ("British Airways BA183", 2.3),
     ("Qantas QF12", 1.3),
-    ("Emirates EK231", 1.5)
+    ("Emirates EK231", 1.5),
 ]
 
 

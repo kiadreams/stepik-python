@@ -3,8 +3,8 @@ from string import ascii_letters, digits
 
 
 def generate_password(length):
-    symbols = list(set(ascii_letters + digits).difference('lI1oO0'))
-    password = ''.join([choice(symbols) for _ in range(length)])
+    symbols = list(set(ascii_letters + digits).difference("lI1oO0"))
+    password = "".join([choice(symbols) for _ in range(length)])
     return password
 
 
@@ -14,4 +14,4 @@ def generate_passwords(count, length):
 
 
 n, m = int(input()), int(input())
-print(*generate_passwords(n, m), sep='\n')
+print(*generate_passwords(n, m), sep="\n")

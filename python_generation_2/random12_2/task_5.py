@@ -2,4 +2,4 @@ import random
 
 
 word = input()
-print(''.join(random.sample(word, len(word))))
+print("".join(random.sample(word, len(word))))

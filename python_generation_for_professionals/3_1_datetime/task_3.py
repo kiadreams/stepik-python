@@ -6,7 +6,7 @@ florida_hurricane_dates = [
     date(1995, 6, 2),
     date(1954, 4, 12),
     date(2003, 8, 31),
-    date(2010, 11, 13)
+    date(2010, 11, 13),
 ]
 
 

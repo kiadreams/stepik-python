@@ -9,6 +9,7 @@ import time
 #         answer.setdefault(word[0], len(word))
 #     return answer
 
+
 # Второй вариант решения (преподавателя)
 def spell(*args):
     result = {}
@@ -20,12 +21,19 @@ def spell(*args):
 
 start = time.time()
 for _ in range(1):
-    words = ['Россия', 'Австрия', 'Австралия',
-            'РумыниЯ', 'Украина', 'КИТай', 'УЗБЕКИСТАН']
+    words = [
+        "Россия",
+        "Австрия",
+        "Австралия",
+        "РумыниЯ",
+        "Украина",
+        "КИТай",
+        "УЗБЕКИСТАН",
+    ]
 
     spell(*words)
-    spell('Математика', 'История', 'химия', 'биология', 'Информатика')
-    words = ['fruit', 'football', 'February', 'forest', 'Family']
+    spell("Математика", "История", "химия", "биология", "Информатика")
+    words = ["fruit", "football", "February", "forest", "Family"]
     spell(*words)
     spell()
 finish = time.time()

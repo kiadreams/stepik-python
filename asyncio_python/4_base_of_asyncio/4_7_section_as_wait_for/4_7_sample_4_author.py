@@ -10,9 +10,7 @@ async def coro(delay):
 
 async def coro_a(delay):
     await asyncio.sleep(delay)
-    print(
-        f"{delay=} Другая задача выполнена за {time.perf_counter() - start:.3f}"
-    )
+    print(f"{delay=} Другая задача выполнена за {time.perf_counter() - start:.3f}")
     return delay
 
 

@@ -16,9 +16,7 @@ async def main():
         asyncio.create_task(foo(), name="foo"),
         asyncio.create_task(bar(), name="bar"),
     ]
-    done, pending = await asyncio.wait(
-        tasks, return_when=asyncio.ALL_COMPLETED
-    )
+    done, pending = await asyncio.wait(tasks, return_when=asyncio.ALL_COMPLETED)
 
     for task in done:
         print("Задание завершено:", task.get_name())

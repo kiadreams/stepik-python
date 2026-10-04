@@ -17,10 +17,7 @@ def blocking_fn(arg1, arg2):
         arg1,
     )  # Имитация выполнения длительной операции используем arg1.
     print(f"Завершение blocking_fn() в {time.strftime('%X')}")
-    return (
-        f"В blocking_fn() были переданы два аргумента arg1: {arg1} и"
-        f" arg2: {arg2}"
-    )
+    return f"В blocking_fn() были переданы два аргумента arg1: {arg1} и arg2: {arg2}"
 
 
 # Функция асинхронного sleep()

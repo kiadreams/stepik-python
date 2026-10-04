@@ -10,10 +10,10 @@ def is_correct(day: int, month: int, year: int) -> bool:
 
 
 count = 0
-while (some_date := input()) != 'end':
-    if is_correct(*[int(n) for n in some_date.split('.')]):
+while (some_date := input()) != "end":
+    if is_correct(*[int(n) for n in some_date.split(".")]):
         count += 1
-        print('Корректная')
+        print("Корректная")
     else:
-        print('Некорректная')
+        print("Некорректная")
 print(count)

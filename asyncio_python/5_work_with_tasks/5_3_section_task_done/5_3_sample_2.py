@@ -17,7 +17,6 @@ async def main():
 
     # Цикл, который выполняется, пока есть активные задачи
     while len(tasks) > 0:
-
         # Ожидание завершения задач
         done, tasks = await asyncio.wait(
             tasks,
@@ -27,8 +26,7 @@ async def main():
         # Цикл для вывода сообщения о завершении каждой задачи
         for task in done:
             print(
-                f"Задача выполнена- {task.get_name()} и имеет "
-                f"флаг- {task.done()}",
+                f"Задача выполнена- {task.get_name()} и имеет флаг- {task.done()}",
             )
 
 

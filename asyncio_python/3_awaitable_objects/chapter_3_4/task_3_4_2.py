@@ -29,4 +29,5 @@ async def main():
         print("Проверка: Task не был отменен.")
     print("Главная корутина завершена.")
 
+
 asyncio.run(main())

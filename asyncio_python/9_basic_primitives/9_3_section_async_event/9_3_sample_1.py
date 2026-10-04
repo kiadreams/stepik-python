@@ -14,6 +14,7 @@ async def wait_for_event():
 
 # Определяем корутину для установки события
 async def set_event():
+    await asyncio.sleep(5)
     print("Установка события")
     # Устанавливаем событие
     event.set()

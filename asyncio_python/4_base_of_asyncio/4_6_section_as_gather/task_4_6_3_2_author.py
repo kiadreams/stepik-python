@@ -65,22 +65,17 @@ async def execute_subtask(task_name, duration):
     try:
         await asyncio.wait_for(asyncio.sleep(duration), timeout=5)
         print(
-            f"Подзадача: {task_name} успела выполниться в срок, "
-            f"за {duration} сек.",
+            f"Подзадача: {task_name} успела выполниться в срок, за {duration} сек.",
         )
         return True
     except asyncio.TimeoutError:
         print(
-            f"Подзадача: {task_name} не успела выполниться в срок, "
-            f"за {duration} сек.",
+            f"Подзадача: {task_name} не успела выполниться в срок, за {duration} сек.",
         )
 
 
 async def execute_task(task_name):
-    data_lst = [
-        tuple(dct.values())
-        for dct in tasks_dependencies[task_name]["этапы"]
-    ]
+    data_lst = [tuple(dct.values()) for dct in tasks_dependencies[task_name]["этапы"]]
     subtasks_results = await asyncio.gather(
         *[execute_subtask(*data) for data in data_lst],
     )
@@ -88,7 +83,7 @@ async def execute_task(task_name):
         f"Задача: {task_name} = все подзадачи выполнены"
         if all(subtasks_results)
         else f"Задача: {task_name} не выполнилась в срок, т.к. одна или "
-             f"несколько подзадач заняли слишком много времени.",
+        f"несколько подзадач заняли слишком много времени.",
     )
 
 

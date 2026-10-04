@@ -11,7 +11,7 @@ words = {
     "beautiful": "ˈbjuːtɪfl",
     frozenset(["spoon", "block"]): ("spu:n", "blɔk"),
     "bicycle": "baisikl",
-    ("pilot", "fly"): ("pailət", "flai")
+    ("pilot", "fly"): ("pailət", "flai"),
 }
 
 data_json = json.dumps(words, skipkeys=True)

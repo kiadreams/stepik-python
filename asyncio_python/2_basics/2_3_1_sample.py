@@ -12,4 +12,5 @@ async def main():
     urls = ["http://example.com/file1", "http://example.com/file2"]
     await asyncio.gather(*[download_file(url) for url in urls])
 
+
 asyncio.run(main())

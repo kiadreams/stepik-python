@@ -3,16 +3,14 @@ import asyncio
 
 async def task_func(task_id):
     if task_id == 2:
-        raise TypeError('моё исключение')
+        raise TypeError("моё исключение")
     print(f"Задача {task_id} выполнена")
     return task_id
 
 
 async def main():
     # Создаем несколько задач
-    tasks = [
-        asyncio.create_task(task_func(i), name=f"Task-{i}") for i in range(5)
-    ]
+    tasks = [asyncio.create_task(task_func(i), name=f"Task-{i}") for i in range(5)]
 
     # Ожидаем завершения всех задач
     done, pending = await asyncio.wait(

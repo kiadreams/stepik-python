@@ -9,22 +9,18 @@ import aiohttp
 
 
 async def download_file(url):
-    async with aiohttp.ClientSession() as session:  # Создание асинхронного HTTP-соединения
-        async with session.get(
-            url
-        ) as response:  # Отправка асинхронного GET-запроса
+    async with (
+        aiohttp.ClientSession() as session
+    ):  # Создание асинхронного HTTP-соединения
+        async with session.get(url) as response:  # Отправка асинхронного GET-запроса
             filename = response.headers.get(
                 "content-disposition"
             )  # Извлечение имени файла из заголовков
             if filename:
                 filename = filename.split("filename=")[1]
             task = asyncio.current_task()
-            task.set_name(
-                f"Downloading {filename}"
-            )  # Установка имени текущей задачи
-            with open(
-                filename, "wb"
-            ) as f:  # Открытие файла для записи бинарных данных
+            task.set_name(f"Downloading {filename}")  # Установка имени текущей задачи
+            with open(filename, "wb") as f:  # Открытие файла для записи бинарных данных
                 while True:
                     chunk = await response.content.read(
                         1024

@@ -8,4 +8,5 @@
 def is_valid(string: str) -> bool:
     return len(string) in (4, 5, 6) and string.isdigit()
 
-print(is_valid('2314'))
+
+print(is_valid("2314"))

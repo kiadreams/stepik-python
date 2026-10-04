@@ -2,7 +2,7 @@
 print(all([True, True, True]))
 
 # Возвращает False, так как не все значения списка равны True
-print(all([True, True, False]), '\n')
+print(all([True, True, False]), "\n")
 
 # Напомним, что в Python все следующие значения приводятся к значению False:
 #   - константы None и False;
@@ -11,23 +11,22 @@ print(all([True, True, False]), '\n')
 
 
 # При работе со словарями функция all() проверяет на соответствие параметрам True ключи словаря, а не их значения.
-dict1 = {0: 'Zero', 1: 'One', 2: 'Two'}
-dict2 = {'Zero': 0, 'One': 1, 'Two': 2}
+dict1 = {0: "Zero", 1: "One", 2: "Two"}
+dict2 = {"Zero": 0, "One": 1, "Two": 2}
 
 print(all(dict1))
-print(all(dict2), '\n')
+print(all(dict2), "\n")
 
 # !!! ВАЖНО - если переданный итерируемый объект пустой, то функция all() возвращает значение True!!!
-print(all([]))          #  передаем пустой список
-print(all(()))          #  передаем пустой кортеж
-print(all(''))          #  передаем пустую строку
-print(all([[], []]))    #  передаем список, содержащий пустые списки
-
+print(all([]))  #  передаем пустой список
+print(all(()))  #  передаем пустой кортеж
+print(all(""))  #  передаем пустую строку
+print(all([[], []]))  #  передаем список, содержащий пустые списки
 
 
 # !!!ВАЖНО!!! Реализация встроенной функции all() выглядит примерно так:
 def all(iterable):
     for item in iterable:
-       if not item:
-           return False
+        if not item:
+            return False
     return True

@@ -11,10 +11,7 @@ async def my_coro(delay):
 
 
 async def main():
-    tasks = [
-        asyncio.create_task(my_coro(i), name=f"Задача_{i}")
-        for i in range(1, 4)
-    ]
+    tasks = [asyncio.create_task(my_coro(i), name=f"Задача_{i}") for i in range(1, 4)]
     print("Запуск задач...")
     done, pending = await asyncio.wait(tasks, timeout=2)
 
@@ -25,7 +22,7 @@ async def main():
         # Опционально: Можно отменить оставшиеся задачи, если это необходимо
         print(f"Отмена задач...")
         for task in pending:
-            if task.get_name() == 'Задача_3':
+            if task.get_name() == "Задача_3":
                 print(await task)
             else:
                 print(f"{task.get_name()}: Отмена ")

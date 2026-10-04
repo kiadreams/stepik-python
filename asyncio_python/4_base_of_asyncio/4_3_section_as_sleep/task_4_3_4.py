@@ -34,11 +34,7 @@ async def check_mail(server):
                 print(message)
                 server_is_running = False
             case bool():
-                print(
-                    await server.fetch_new_mail()
-                    if response
-                    else 'Новых писем нет.'
-                )
+                print(await server.fetch_new_mail() if response else "Новых писем нет.")
         await asyncio.sleep(1)
 
 

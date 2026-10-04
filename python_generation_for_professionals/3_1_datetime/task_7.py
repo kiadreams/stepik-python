@@ -9,6 +9,7 @@ def saturdays_between_two_dates(start, end):
             saturdays += 1
     return saturdays
 
+
 # d = 7
 # some_date = date.fromordinal(d + 7)
 # print(some_date)

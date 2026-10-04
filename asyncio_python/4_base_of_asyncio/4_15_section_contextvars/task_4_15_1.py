@@ -9,7 +9,7 @@ def set_order_state(state):
 
 
 async def process_order(order_id):
-    for stage in ('Принят', 'Обрабатывается', 'Отправлен'):
+    for stage in ("Принят", "Обрабатывается", "Отправлен"):
         await asyncio.sleep(1, set_order_state(stage))
         print(f"Заказ {order_id} сейчас в состоянии: {order_state.get()}")
 

@@ -11,7 +11,7 @@ def draw_ray(some_len):
 
 lenght = 100
 
-turtle.shape('turtle')
+turtle.shape("turtle")
 turtle.pensize(3)
 turtle.stamp()
 for _ in range(10):

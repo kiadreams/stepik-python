@@ -22,7 +22,7 @@ async def monitor_servers(servers):
 
 async def main():
     async for server, status in monitor_servers(SERVERS):
-        print(f'{server}: состояние {status}')
+        print(f"{server}: состояние {status}")
 
 
 asyncio.run(main())

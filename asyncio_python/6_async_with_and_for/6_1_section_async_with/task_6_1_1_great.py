@@ -10,6 +10,7 @@ database = [
 
 input_text = "Настроить CI/CD, В процессе"  # В примере будет поступать через ввод
 
+
 class AsyncListManager:
     @staticmethod
     async def connect() -> None:

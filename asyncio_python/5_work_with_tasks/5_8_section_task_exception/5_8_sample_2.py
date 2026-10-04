@@ -17,7 +17,9 @@ async def main():
         asyncio.create_task(successful_coroutine()),
     ]
     try:
-        await asyncio.gather(*tasks,)
+        await asyncio.gather(
+            *tasks,
+        )
     except ValueError as ex:
         print(ex)
 

@@ -11,13 +11,12 @@ def zigzag(quantity):
         way += 1
 
 
-turtle.shape('turtle')
+turtle.shape("turtle")
 turtle.pensize(3)
 turtle.penup()
 turtle.stamp()
-turtle.Screen().bgcolor('lawngreen')
+turtle.Screen().bgcolor("lawngreen")
 zigzag(7)
-
 
 
 sleep(3)

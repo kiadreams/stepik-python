@@ -2,7 +2,8 @@ from time import sleep
 import turtle
 
 
-color_lst = ['yellow', 'blue', 'red', 'orange', '#be54d4', 'green']
+color_lst = ["yellow", "blue", "red", "orange", "#be54d4", "green"]
+
 
 def line(rows):
     way, size = 150, 15
@@ -18,7 +19,7 @@ def line(rows):
         size -= d_size
 
 
-turtle.Screen().bgcolor('cyan')
+turtle.Screen().bgcolor("cyan")
 line(8)
 
 sleep(3)

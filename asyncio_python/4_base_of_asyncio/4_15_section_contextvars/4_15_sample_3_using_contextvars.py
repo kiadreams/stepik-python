@@ -3,8 +3,8 @@ import contextvars
 import random
 
 # Определяем контекстные переменные
-user_context = contextvars.ContextVar('user_context')
-request_id_context = contextvars.ContextVar('request_id_context')
+user_context = contextvars.ContextVar("user_context")
+request_id_context = contextvars.ContextVar("request_id_context")
 
 
 def log_message(message):
@@ -47,7 +47,7 @@ async def main():
         task = asyncio.create_task(handle_user_request(user, req_id))
         tasks.append(task)
     await asyncio.gather(*tasks)
-    log_message('Unknown')
+    log_message("Unknown")
 
 
 asyncio.run(main())

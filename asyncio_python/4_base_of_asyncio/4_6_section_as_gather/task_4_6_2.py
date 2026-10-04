@@ -24,8 +24,7 @@ async def equipment_request(request: str):
 async def send_requests():
     responses = await asyncio.gather(*map(equipment_request, equipment_list))
     print(
-        f"На отправку {len(responses)} запросов "
-        f"потребовалось {query_time()} секунд!",
+        f"На отправку {len(responses)} запросов потребовалось {query_time()} секунд!",
     )
 
 

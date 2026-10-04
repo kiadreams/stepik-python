@@ -12,7 +12,7 @@ async def scan_port(address, port) -> int | None:
     await asyncio.sleep(1)
     if random.randint(0, 100) == 1:
         # Печать сообщения об обнаружении открытого порта.
-        print(f'Port {port} on {address} is open')
+        print(f"Port {port} on {address} is open")
         return port
     return None
 
@@ -36,7 +36,9 @@ async def main(dct):
     results = await asyncio.gather(*coroutines)
     for address, ports in results:
         if ports:
-            print(f'Всего найдено открытых портов {len(ports)} {ports} для ip: {address}')
+            print(
+                f"Всего найдено открытых портов {len(ports)} {ports} для ip: {address}"
+            )
 
 
 # Запуск асинхронного приложения с передачей в main() словаря ip_dct

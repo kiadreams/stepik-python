@@ -17,4 +17,4 @@ async def main():
 
 
 asyncio.run(main())
-print(f"global_counter: {round(global_counter,2)}")
+print(f"global_counter: {round(global_counter, 2)}")

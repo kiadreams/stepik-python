@@ -68,14 +68,14 @@ passengers = [
 ]
 # Ваше решение.
 
-pas_job = contextvars.ContextVar('job')
-pas_name = contextvars.ContextVar('name')
+pas_job = contextvars.ContextVar("job")
+pas_name = contextvars.ContextVar("name")
 
 
 async def get_on_bus(passenger):
-    pas_name.set(passenger['Name'])
-    pas_job.set(passenger['Job'])
-    await asyncio.sleep(passenger['Speed'])
+    pas_name.set(passenger["Name"])
+    pas_job.set(passenger["Job"])
+    await asyncio.sleep(passenger["Speed"])
 
 
 async def main():
@@ -87,9 +87,11 @@ async def main():
             context = task.get_context()
             name = context.get(pas_name)
             if task.cancelled():
-                print(f'{name} {context.get(pas_job)} не успел/а вовремя сесть в автобус.')
+                print(
+                    f"{name} {context.get(pas_job)} не успел/а вовремя сесть в автобус."
+                )
             else:
-                print(f'{name} сел в автобус.')
+                print(f"{name} сел в автобус.")
 
 
 asyncio.run(main())

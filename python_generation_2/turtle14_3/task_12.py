@@ -1,13 +1,14 @@
 import turtle as t
 
 t.hideturtle()
-t.Screen().bgcolor('white')
+t.Screen().bgcolor("white")
+
 
 def move(x, y):
-  t.speed(0)
-  t.penup()
-  t.goto(x, y)
-  t.pendown()
+    t.speed(0)
+    t.penup()
+    t.goto(x, y)
+    t.pendown()
 
 
 move(-100, -100)
@@ -18,8 +19,8 @@ for _ in range(8):
     t.left(45)
 
 move(-97, -92)
-t.pencolor('white')
-t.fillcolor('red')
+t.pencolor("white")
+t.fillcolor("red")
 t.begin_fill()
 for _ in range(8):
     t.speed(0)
@@ -29,6 +30,6 @@ for _ in range(8):
 t.end_fill()
 
 move(-154, -8)
-t.fillcolor('white')
-t.pencolor('black')
-t.write('STOP', font=('arial', 58, 'bold'))
+t.fillcolor("white")
+t.pencolor("black")
+t.write("STOP", font=("arial", 58, "bold"))

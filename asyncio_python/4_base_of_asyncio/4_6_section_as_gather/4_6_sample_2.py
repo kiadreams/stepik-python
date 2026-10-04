@@ -9,6 +9,7 @@ import asyncio
 # В случае return_exceptions=True для тех корутин, которые завершились с
 # ошибкой, в значение результата будет записана возникшая ошибка
 
+
 async def my_coro(num):
     print(f"Корутина {num} началась")
     await asyncio.sleep(num)
@@ -21,7 +22,7 @@ async def my_coro(num):
 async def main():
     coros = [my_coro(i) for i in range(1, 6)]
     results = await asyncio.gather(*coros, return_exceptions=True)
-    print(f'{results = }')
+    print(f"{results = }")
 
 
 asyncio.run(main())

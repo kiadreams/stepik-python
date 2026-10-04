@@ -3,11 +3,11 @@ import time
 import turtle
 
 
-colors_circle = {'red': (0, 60), 'yellow': (0, -40), 'green': (0, -140)}
+colors_circle = {"red": (0, 60), "yellow": (0, -40), "green": (0, -140)}
 coordinates_rect = ((60, -155), (60, 155), (-60, 155), (-60, -155))
 
 turtle.penup()
-turtle.fillcolor('black')
+turtle.fillcolor("black")
 turtle.begin_fill()
 turtle.goto(-60, -155)
 turtle.pendown()

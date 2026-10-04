@@ -6,6 +6,6 @@ from datetime import datetime, timedelta
 # print(int(diff_time.total_seconds()))
 
 # Второй вариант
-h, m, s = map(int, input().split(':'))
+h, m, s = map(int, input().split(":"))
 delta_time = timedelta(hours=h, minutes=m, seconds=s)
 print(int(delta_time.total_seconds()))

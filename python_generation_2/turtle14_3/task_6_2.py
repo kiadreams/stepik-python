@@ -1,9 +1,10 @@
 import turtle as t
 
 
-bg_color = '#000BCB'
+bg_color = "#000BCB"
 t.Screen().setup(500, 500)
 t.Screen().bgcolor(bg_color)
+
 
 def circle(rad, x, y, color):
     t.penup()
@@ -22,7 +23,7 @@ t.hideturtle()
 t.speed(0)
 t.tracer(0)
 while num:
-    circle(150, 0, -150, '#FFCE00')
+    circle(150, 0, -150, "#FFCE00")
     circle(150, x + 300, y, bg_color)
     x -= 1
     num -= 1

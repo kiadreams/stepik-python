@@ -11,7 +11,7 @@ async def coro():
     # raise FileNotFoundError("Файл не найден")
 
     # Вариант 3. Exception выбрасывается самим интерпретатором.
-    with open('bug.txt', 'r', encoding='utf-8') as file:
+    with open("bug.txt", "r", encoding="utf-8") as file:
         ...
 
 

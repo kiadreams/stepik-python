@@ -7,14 +7,14 @@ turtle.circle(80)
 turtle.forward(70)
 turtle.dot()
 turtle.right(90)
-turtle.pencolor('cyan')
+turtle.pencolor("cyan")
 turtle.forward(90)
-turtle.dot(10, 'black')
-turtle.pencolor('red')           #  строковое представление цвета
+turtle.dot(10, "black")
+turtle.pencolor("red")  #  строковое представление цвета
 turtle.circle(90)
 print(turtle.pencolor())
 tup = (0.2, 0.8, 0.55)
-turtle.pencolor(tup)   #  значения r, g, b в качестве аргументов
+turtle.pencolor(tup)  #  значения r, g, b в качестве аргументов
 print(turtle.pencolor())
 turtle.circle(50)
 turtle.colormode(255)  # Переключение с режима цвета 1.0 на 255
@@ -30,7 +30,7 @@ turtle.Screen().bgcolor(30, 30, 30)
 
 turtle.left(270)
 turtle.forward(200)
-turtle.shape('turtle')
+turtle.shape("turtle")
 for i in range(3):
     turtle.stamp()
     turtle.forward(30)
@@ -56,18 +56,15 @@ time.sleep(3)
 
 # Так устанавливается фоновое изоображение!!! Но не сработает так как нет фактически рисунка
 
-turtle.Screen().setup(400, 400)               # устанавливаем размер граф. окна
-turtle.Screen().addshape('rocketship.png')    # добавляем форму черепашки
+turtle.Screen().setup(400, 400)  # устанавливаем размер граф. окна
+turtle.Screen().addshape("rocketship.png")  # добавляем форму черепашки
 
 # устанавливаем фоновое изображение
-turtle.Screen().bgpic('space.jpg')
-turtle.shape('rocketship.png')                # устанавливаем форму черепашки
-turtle.pencolor('green')
+turtle.Screen().bgpic("space.jpg")
+turtle.shape("rocketship.png")  # устанавливаем форму черепашки
+turtle.pencolor("green")
 turtle.pensize(5)
 
 for _ in range(4):
-  turtle.forward(150)
-  turtle.left(90)
-  
-
-
+    turtle.forward(150)
+    turtle.left(90)

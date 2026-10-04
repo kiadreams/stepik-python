@@ -22,7 +22,7 @@ async def user_action_generator():
         user = random.choice(users)
         product = random.choice(products)
         action = random.choice(actions)
-        yield {'user_id': user, 'action': action, 'product_id': product}
+        yield {"user_id": user, "action": action, "product_id": product}
 
 
 async def main():

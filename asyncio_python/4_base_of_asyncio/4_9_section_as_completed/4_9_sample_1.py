@@ -4,7 +4,7 @@ import random
 
 async def some_task(num):
     await asyncio.sleep(delay := random.random())
-    return f'Task {num} completed, {delay=:.3f}'
+    return f"Task {num} completed, {delay=:.3f}"
 
 
 async def main():

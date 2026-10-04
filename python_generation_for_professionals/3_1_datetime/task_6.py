@@ -12,4 +12,4 @@ def get_date_range(start: date, end: date) -> list:
 date1 = date(2021, 10, 1)
 date2 = date(2021, 10, 2)
 
-print(*get_date_range(date1, date2), sep='\n')
+print(*get_date_range(date1, date2), sep="\n")

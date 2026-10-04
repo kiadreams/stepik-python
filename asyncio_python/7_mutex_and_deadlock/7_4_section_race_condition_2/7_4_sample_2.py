@@ -15,7 +15,6 @@ async def update_resource():
 
     # Используем асинхронный замок для обеспечения безопасности при обновлении shared_resource
     async with lock:
-
         # Сохраняем текущее значение shared_resource во временную переменную
         temp = shared_resource
         await asyncio.sleep(1)

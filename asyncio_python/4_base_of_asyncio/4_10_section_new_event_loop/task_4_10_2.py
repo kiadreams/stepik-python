@@ -2,7 +2,7 @@ import asyncio
 
 
 def check_loop_status(loop):
-    return f'Цикл событий активен: {loop.is_running()}, Цикл событий закрыт: {loop.is_closed()}.'
+    return f"Цикл событий активен: {loop.is_running()}, Цикл событий закрыт: {loop.is_closed()}."
 
 
 async def main(loop):

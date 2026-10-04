@@ -4,7 +4,7 @@ import calendar, locale
 english_names = list(calendar.month_abbr)
 print(english_names)
 
-locale.setlocale(locale.LC_ALL, 'ru_RU.UTF-8')
+locale.setlocale(locale.LC_ALL, "ru_RU.UTF-8")
 
 russian_names = list(calendar.month_abbr)
 print(russian_names)

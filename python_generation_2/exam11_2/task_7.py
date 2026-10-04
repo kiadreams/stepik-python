@@ -6,7 +6,6 @@ for _ in range(int(input())):
     person[product] = person.get(product, 0) + int(quantity)
 
 for name, products in sorted(purchases.items()):
-    print(f'{name}:')
+    print(f"{name}:")
     for product, quantity in sorted(products.items()):
-        print(f'{product} {quantity}')
-    
+        print(f"{product} {quantity}")

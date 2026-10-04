@@ -13,4 +13,4 @@ type = 7
 print(type)
 print(min(1, 2))
 print(round(50.445, -1))
-print(f'result {S = }')
+print(f"result {S = }")

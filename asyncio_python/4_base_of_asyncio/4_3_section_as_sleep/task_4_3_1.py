@@ -2,9 +2,9 @@ import asyncio
 
 
 async def coro(name: int, delay: int):
-    print(f'Первое сообщение от корутины {name}')
+    print(f"Первое сообщение от корутины {name}")
     await asyncio.sleep(delay)
-    print(f'Второе сообщение от корутины {name}')
+    print(f"Второе сообщение от корутины {name}")
 
 
 async def main():

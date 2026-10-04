@@ -19,9 +19,10 @@ async def main():
     # await fetched_data
     # await processed_data
     # print(await fetched_data, await processed_data)
-    
+
     fetched_data = await asyncio.create_task(fetch_data())
     processed_data = await asyncio.create_task(process_data())
     print(fetched_data, processed_data)
+
 
 asyncio.run(main())

@@ -10,7 +10,6 @@ async def waiter(future):
     )
 
 
-
 async def setter(future):
     await asyncio.sleep(random.randint(1, 3))
     future.set_result(True)
@@ -23,5 +22,6 @@ async def main():
         asyncio.create_task(waiter(future)),
     ]
     await asyncio.gather(*tasks)
+
 
 asyncio.run(main())

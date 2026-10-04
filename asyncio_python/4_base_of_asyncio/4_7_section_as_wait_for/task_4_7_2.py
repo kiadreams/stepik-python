@@ -19,7 +19,7 @@ students = ["Алара", "Бренн", "Сирил", "Дариа", "Элвин"
 
 
 async def cast_spell(student, spell, cast_time):
-    task = asyncio.create_task(asyncio.sleep(cast_time, '1'))
+    task = asyncio.create_task(asyncio.sleep(cast_time, "1"))
     try:
         await asyncio.wait_for(asyncio.shield(task), max_cast_time)
     except TimeoutError:
@@ -31,6 +31,7 @@ async def cast_spell(student, spell, cast_time):
         )
     else:
         print(f"{student} успешно кастует {spell} за {cast_time} сек.")
+
 
 async def main():
     tasks = [

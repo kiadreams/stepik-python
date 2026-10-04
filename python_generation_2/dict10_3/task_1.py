@@ -1,1 +1,1 @@
-result = {val: val ** 2 for val in range(1, 16)}
+result = {val: val**2 for val in range(1, 16)}

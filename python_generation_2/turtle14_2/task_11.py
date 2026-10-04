@@ -20,7 +20,7 @@ def finished_beer():
     turtle.goto(0, -15)
     turtle.pendown()
     turtle.goto(0, -85)
-    
+
 
 radiuses = [40, 40, 163, 100, 20]
 centers = [(-130, 130), (130, 130), (0, -150), (0, -149), (0, -15)]

@@ -8,6 +8,7 @@ def draw_triangle(side):
         turtle.forward(side)
         turtle.left(120)
 
+
 draw_triangle(150)
 turtle.penup()
 turtle.goto(150, 80)

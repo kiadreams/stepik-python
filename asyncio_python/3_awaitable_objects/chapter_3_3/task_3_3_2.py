@@ -34,4 +34,5 @@ async def main() -> None:
     await task_2
     await task_3
 
+
 asyncio.run(main())

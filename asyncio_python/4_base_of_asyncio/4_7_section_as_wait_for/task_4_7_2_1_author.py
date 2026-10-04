@@ -37,9 +37,7 @@ async def cast_all_spells_for_student(student):
             print(
                 f"Ученик {student} не справился с заклинанием {spell}, и учитель применил щит. {student} успешно завершает заклинание с помощью shield."
             )
-            result = (
-                await task
-            )  # Дожидаемся результата после истечения таймаута
+            result = await task  # Дожидаемся результата после истечения таймаута
             print(result)
         else:
             result = await task  # Получаем результат успешного каста

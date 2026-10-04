@@ -9,6 +9,6 @@ for person in schoolboys:
         print(*person)
 
 # Как вариант
-    
+
 # m = tuple([input() for _ in range(int(input()))])
 # print(*m, '', *filter(lambda pair: pair[-1] > '3', m), sep='\n')

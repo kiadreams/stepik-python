@@ -1,4 +1,4 @@
-vowels = 'аеиоуюяёыэ'
+vowels = "аеиоуюяёыэ"
 sample = [i for i, v in enumerate(input()) if v in vowels]
 for _ in range(int(input())):
     word = input()

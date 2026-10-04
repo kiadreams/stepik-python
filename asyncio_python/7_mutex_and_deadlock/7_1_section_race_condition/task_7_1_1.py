@@ -32,7 +32,7 @@ async def main():
     async with asyncio.TaskGroup() as tg:
         [tg.create_task(reserve_book(book)) for book in reservation_tasks.values()]
     for book, nums in library_catalog.items():
-        print(f'{book}: {nums}')
+        print(f"{book}: {nums}")
 
 
 asyncio.run(main())

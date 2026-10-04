@@ -16,10 +16,13 @@ async def main():
         "Довод": 3.3,
         "Побег из Шоушенка": 5.4,
         "Криминальное чтиво": 2.9,
-        "Форрест Гамп": 5.8
+        "Форрест Гамп": 5.8,
     }
     tasks = [asyncio.create_task(upload_file(*data)) for data in files.items()]
-    [print(f'{await task}: фильм загружен на сервер') for task in asyncio.as_completed(tasks)]
+    [
+        print(f"{await task}: фильм загружен на сервер")
+        for task in asyncio.as_completed(tasks)
+    ]
 
 
 asyncio.run(main())

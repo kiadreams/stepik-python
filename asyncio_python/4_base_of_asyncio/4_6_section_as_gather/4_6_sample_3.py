@@ -7,9 +7,7 @@ async def do_homework(student_id, task_duration):
     print(
         f"Ученик {student_id} начал делать задание, это займет {task_duration} секунд."
     )
-    await asyncio.sleep(
-        task_duration
-    )  # Имитация времени на выполнение задания
+    await asyncio.sleep(task_duration)  # Имитация времени на выполнение задания
     if random.choice([True, False]):  # Случайный выбор успеха или неудачи
         print(f"Ученик {student_id} успешно завершил задание.")
         return f"Задание ученика {student_id} выполнено."
@@ -22,9 +20,7 @@ async def do_homework(student_id, task_duration):
 
 async def main():
     tasks = [
-        asyncio.create_task(
-            do_homework(i, random.randint(1, 5)), name=f"Task_{i}"
-        )
+        asyncio.create_task(do_homework(i, random.randint(1, 5)), name=f"Task_{i}")
         for i in range(1, 6)
     ]
     try:

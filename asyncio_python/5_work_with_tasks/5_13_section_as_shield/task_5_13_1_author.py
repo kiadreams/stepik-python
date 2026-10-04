@@ -21,7 +21,8 @@ async def deliver(order):
         main.big_data = delivery_time
     print(
         await asyncio.sleep(
-            delivery_time, f"Подарок {item} успешно доставлен в г. {city}",
+            delivery_time,
+            f"Подарок {item} успешно доставлен в г. {city}",
         )
     )
 

@@ -11,7 +11,8 @@ async def task(loop, num):
     print(
         f"Задача task_{num} запущена в потоке id: {thread_id}, "
         f"текущий event loop id: {id(e_loop_id)}, "
-        f"переданный event loop id: {id(loop)}")
+        f"переданный event loop id: {id(loop)}"
+    )
     await asyncio.sleep(num)
     print(f"Задача task_{num} завершена!")
 
@@ -30,16 +31,25 @@ def start_loop(loop, coro, num):
 # def main():
 async def main():
 
-    print(f'main()\nТекущий поток id: {threading.current_thread().ident}\n'
-          f'Текущий цикл событий id: {id(asyncio.get_running_loop())}\n{"-" * 50}')
+    print(
+        f"main()\nТекущий поток id: {threading.current_thread().ident}\n"
+        f"Текущий цикл событий id: {id(asyncio.get_running_loop())}\n{'-' * 50}"
+    )
     # print(f'main()\nТекущий поток id: {threading.current_thread().ident}')
     loop1 = asyncio.new_event_loop()  # Создание нового цикла событий.
-    print(f'Создан новый цикл событий id: {id(loop1)}')
+    print(f"Создан новый цикл событий id: {id(loop1)}")
     loop2 = asyncio.new_event_loop()  # Создание еще одного нового цикла событий.
-    print(f'Создан новый цикл событий id: {id(loop2)}\n{"-" * 50}')
+    print(f"Создан новый цикл событий id: {id(loop2)}\n{'-' * 50}")
 
     # Создание и запуск независимых потоков для каждого цикла событий и корутины.
-    thread1 = threading.Thread(target=start_loop, args=(loop1, task, 1,))
+    thread1 = threading.Thread(
+        target=start_loop,
+        args=(
+            loop1,
+            task,
+            1,
+        ),
+    )
     thread2 = threading.Thread(target=start_loop, args=(loop2, task, 2))
 
     # Запуск потоков.

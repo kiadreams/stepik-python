@@ -33,8 +33,7 @@ async def run_lap(name, speed):
 
 async def main(max_time=10):  # Максимальное время для завершения круга 10 сек
     tasks = [
-        asyncio.create_task(run_lap(name, speed))
-        for name, speed in runners.items()
+        asyncio.create_task(run_lap(name, speed)) for name, speed in runners.items()
     ]
     try:
         await asyncio.wait_for(asyncio.gather(*tasks), max_time)

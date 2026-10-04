@@ -3,9 +3,10 @@ import turtle
 
 
 turtle.Screen().setup(500, 500)
-turtle.Screen().bgcolor('white')
+turtle.Screen().bgcolor("white")
 
 # два варианта
+
 
 def triangle(size):
     if turtle.isvisible():
@@ -20,6 +21,7 @@ def triangle(size):
             turtle.left(60 * 2)
         turtle.pensize(1)
 
+
 def illusion(x, y):
     turtle.speed(10)
     triangle(200)
@@ -29,15 +31,16 @@ def illusion(x, y):
     turtle.hideturtle()
     triangle(200)
     turtle.showturtle()
-    turtle.fillcolor('white')
-    turtle.pencolor('white')
+    turtle.fillcolor("white")
+    turtle.pencolor("white")
     turtle.begin_fill()
     triangle(200)
     turtle.end_fill()
     turtle.hideturtle()
-  
+
+
 x, y = -80, -20
-turtle.penup()  
+turtle.penup()
 turtle.goto(x, y)
 turtle.pendown()
 illusion(x, y)

@@ -214,9 +214,7 @@ async def check_message(msg: str):
 
 async def main():
     tasks = [
-        asyncio.create_task(
-            check_message(msg["message"]), name=msg["message_id"]
-        )
+        asyncio.create_task(check_message(msg["message"]), name=msg["message_id"])
         for msg in message
     ]
     done, _ = await asyncio.wait(tasks)

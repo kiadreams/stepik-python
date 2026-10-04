@@ -18,4 +18,5 @@ async def main():
     processed_data = await process_data()
     print(fetched_data, processed_data)
 
+
 asyncio.run(main())

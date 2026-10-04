@@ -45,8 +45,7 @@ async def producer(queue):
                     f"методом put_nowait() вызвала asyncio.QueueFull{END}",
                 )
                 print(
-                    f"{GREEN}Запускаем процесс получения элементов из "
-                    f"очереди{END}",
+                    f"{GREEN}Запускаем процесс получения элементов из очереди{END}",
                 )
                 # Приостанавливаем producer() и ожидаем выполнения customer()
                 await customer(queue)

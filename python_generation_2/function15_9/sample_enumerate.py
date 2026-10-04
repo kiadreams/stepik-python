@@ -8,7 +8,7 @@
 
 # С помощью необязательного параметра start можно задать начальное значение индекса. По умолчанию значение параметра start = 0, то есть счет начинается с нуля.
 
-colors = ['red', 'green', 'blue']
+colors = ["red", "green", "blue"]
 
 for pair in enumerate(colors):
     print(pair)

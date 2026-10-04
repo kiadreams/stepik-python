@@ -13,9 +13,7 @@ async def withdraw_money(amount, lock):
         if bank_account >= amount:
             await asyncio.sleep(0.01)  # Имитация долгой операции
             bank_account -= amount
-            print(
-                f"Снятие {amount}р успешно. Оставшийся баланс: {bank_account}р"
-            )
+            print(f"Снятие {amount}р успешно. Оставшийся баланс: {bank_account}р")
         else:
             print(
                 f"Снятие {amount}р не удалось. Недостаточно средств. Оставшийся баланс: {bank_account}р"

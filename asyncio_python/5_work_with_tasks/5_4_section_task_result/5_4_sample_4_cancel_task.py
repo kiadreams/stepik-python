@@ -1,7 +1,8 @@
 import asyncio
 
+
 async def task_coroutine():
-    print('Задача выполняется')
+    print("Задача выполняется")
     await asyncio.sleep(1)
 
     # Возвращение значения (никогда не достигается)
@@ -9,7 +10,7 @@ async def task_coroutine():
 
 
 async def main():
-    print('Основная корутина начата')
+    print("Основная корутина начата")
     task = asyncio.create_task(task_coroutine())
     await asyncio.sleep(0.1)
 
@@ -20,11 +21,11 @@ async def main():
     try:
         # Получение результата
         value = task.result()
-        print(f'Результат: {value}')
+        print(f"Результат: {value}")
         # print(await task)
     except asyncio.CancelledError:
-        print('Задача была отменена.')
-    print('Основная корутина завершена')
+        print("Задача была отменена.")
+    print("Основная корутина завершена")
 
 
 asyncio.run(main())

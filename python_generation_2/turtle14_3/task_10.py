@@ -1,8 +1,9 @@
 import time
 import turtle as t
 
-lst = ['Восток', 'Запад', 'Север', 'Юг']
-lst1 = ['left', 'right', 'center', 'center']
+lst = ["Восток", "Запад", "Север", "Юг"]
+lst1 = ["left", "right", "center", "center"]
+
 
 def line(size):
     for i in range(2):
